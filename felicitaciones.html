@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>❤️❤️❤️❤️❤️❤️❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-8T/lWZhfYDLHGGIgmE0s2jKgW73/aOJp+vTfnsI87H1YjK/vmfTc02sEReLsQaK8WzCxMgFuzofb/gPqxLYbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-8T/lWZhfYDLHGGIgmE0s2jKgW73/aOJp+vTfnsI87H1YjK/vmfTc02sEReLsQaK8WzCxMgFuzofb/gPqxLYbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="audio/icons8-lazo-marcapáginas-100.png">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('https://media.tenor.com/0WzEJXwzEpgAAAAC/stars-space.gif');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        #contenido {
+            display: none;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        button {
+            background-color: #e6007e;
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        h1, h2 {
+            opacity: 0;
+            animation: fadeInText 2s ease-in forwards;
+        }
+        
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .mostrar-contenido {
+            display: block;
+        }
+        
+        .boton-link {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Holis, mi faca hermosha y preciosha ❤️.</h1>
+    <h2>Si estás leyendo esto, es porque superaste el desafío y hay una carta de amor para ti. ❤️</h2>
+    <iframe src="https://giphy.com/embed/3o6vY6L5NNr67HQW7S" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+    <button class="nose">Abrir</button>
+    <div id="contenido">
+        <p class="fadeIn"> Mi Dios <br>
+            Se que no te pido muchas cosas pero....
+            Cuidala en esa noches en la que no estoy, Ayudala con todas esas metas que ella me contó, 
+            brindale sabiduria engrandemente. ayudala en sus dificultades y en cada obstáculo por que se que el camino es duro, 
+            protegela con todo tu amor, no la abandones por que ella se merece lo mejor de este mundo y no permitas que nada malo le pase.❤️
+
+           <br> Felicidades mi reina :)
+
+           <br>estoy tan orgulloso de ti mi reina, valoro muco el esfuerzo qeu haces cada dia, nunca te rindas,
+           te mereces lo mejor de este mundo y sobre todo nubca dejes de sonreír, recuerda que siempre estaré aquí ❤️
+
+           <br>No te prometo días perfectos, ni la eternidad te voy a hacer enojar, 
+           te voy a celar, te voy a hacer berrinches por cualquier cosa, me vaz a querer matar de vez en cuando, 
+           pero lo que si te prometo es que voy a estar contigo en las buenas y en las malas y prometo amarte siempre, 
+           y te voy a enamorar cada día más con mis defectos, cursilerias y locuras enserio gracias por llegar a mi vida.❤️
+
+           <br>te amo estoy muy pero muy orgulloso de ti mi reina.
+        
+        
+          <br> Te amo. Haz click acá abajo y disfruta la canción. </p>
+
+
+        <img class="boton-link" src="audio/icons8-youtube-100.png" alt="Spotify Logo" onclick="window.location.href='https://youtu.be/dH7_By3Y2i0a6be61'">
+
+        
+    </div>
+	  
+    <script>
+        function mostrarContenido() {
+            document.getElementById("contenido").style.display = "block";
+        }
+        document.querySelector(".nose").addEventListener("click", mostrarContenido);
+		const boton = document.querySelector('.nose');
+		const contenido = document.querySelector('#contenido');
+		const elementosOcultos = document.querySelectorAll('body > *:not(#contenido)');
+
+
+
+boton.addEventListener('click', function() {
+  contenido.classList.add('mostrar-contenido');
+  elementosOcultos.forEach(function(elemento) {
+    elemento.style.display = 'none';
+  });
+});
+
+    </script>
+</body>
+</html>

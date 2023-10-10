@@ -76,3 +76,103 @@ h1 {
     ;
   }  
 }
+
+/* feicitaciones */
+
+body {
+  background-image: url('https://thumbs.gfycat.com/BriefIgnorantBlackbuck-size_restricted.gif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+#contenido {
+  display: none;
+}
+
+#contenido.mostrar {
+  display: block;
+  animation: fadeInText 1s ease-in-out forwards;
+}
+
+#contenido img {
+  display: block;
+  margin: auto;
+}
+
+
+@keyframes escribir {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.nose {
+  background-color: rgb(129, 11, 80);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nose:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+#contenido {
+  max-width: 800px; /* Establece un ancho máximo de 800 píxeles */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
